@@ -1,0 +1,11 @@
+@"
+python-dotenv
+google-generativeai
+langchain-community
+langchain-huggingface
+langchain-text-splitters
+langchain-embeddings
+sentence-transformers
+faiss-cpu
+pypdf
+"@ | Set-Content requirements.txt
