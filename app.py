@@ -69,14 +69,16 @@ Question:
                     st.write(
                         f"{i}. {doc.metadata.get('source', 'Unknown')}"
                     )
+       
         except Exception as exc:
-         error_text = str(exc)
+            error_text = str(exc)
 
-    if "429" in error_text or "quota" in error_text.lower():
-        st.warning(
-            "The AI service has temporarily reached its request quota. "
-            "Please try again when the quota resets."
-        )
-    else:
-        st.error(f"Unable to answer this question: {error_text}")
-        
+            if "429" in error_text or "quota" in error_text.lower():
+                st.warning(
+                    "The AI service has temporarily reached its request "
+                    "quota. Please try again later."
+                )
+            else:
+                st.error(
+                    f"Unable to answer this question: {error_text}"
+                )
