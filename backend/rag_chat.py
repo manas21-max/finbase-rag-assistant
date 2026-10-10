@@ -87,6 +87,7 @@ If the answer exists in the context:
 - Give the answer directly.
 - Quote relevant values, limits, clauses, or policies.
 - Be concise.
+- For Indian currency, write INR instead of the ₹ symbol.
 
 If the answer does NOT exist in the context:
 Reply exactly:
