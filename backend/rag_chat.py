@@ -87,7 +87,8 @@ If the answer exists in the context:
 - Give the answer directly.
 - Quote relevant values, limits, clauses, or policies.
 - Be concise.
-- Display currency symbols clearly; if the rupee symbol cannot be rendered, write INR instead.
+
+- For Indian currency, write INR instead of the ₹ symbol.
 
 If the answer does NOT exist in the context:
 Reply exactly:
